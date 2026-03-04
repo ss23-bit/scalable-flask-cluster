@@ -23,7 +23,7 @@ This is my central repository tracking my transition into a Senior DevOps role. 
 ## 🗺️ 90-Day Roadmap & Progress
 - [x] **Month 1: Linux & Bash** (CS50 Foundations, OverTheWire)
 - [x] **Month 2: Docker Orchestration** (Current Focus: Scaling, Proxies, Health)
-- [ ] **Month 3: Cloud & IaC** (Next: Terraform, AWS/GCP, Kubernetes)
+- [/] **Month 3: Cloud & IaC** (Next: Terraform, AWS/GCP, Kubernetes)
 
 ## 📁 Repository Structure
 - `app-cluster/`: Production Nginx/Flask/Gunicorn setup.
@@ -36,3 +36,4 @@ This is my central repository tracking my transition into a Senior DevOps role. 
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)
+![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=for-the-badge&logo=terraform&logoColor=white)

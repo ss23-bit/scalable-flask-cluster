@@ -27,3 +27,25 @@ jobs:
       - name: Build Docker Image (Dry Run)
         working-directory: ./app-cluster
         run: docker compose build
+
+   # NEW: The CD Deployment Job
+  deploy:
+    needs: audit-and-test # This ensures it ONLY deploys if the AI audit passes!
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to AWS EC2
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.AWS_HOST_IP }}
+          username: ${{ secrets.AWS_SSH_USERNAME }}
+          key: ${{ secrets.AWS_SSH_KEY }}
+          script: |
+            # Clone the repo if it's the first time, otherwise pull latest changes
+            if [ ! -d "scalable-flask-cluster" ]; then
+              git clone https://github.com/${{ github.repository }}.git
+            fi
+            cd scalable-flask-cluster/app-cluster
+            git pull origin main
+            
+            # Spin up the High-Availability Cluster!
+            docker compose up -d --build     
