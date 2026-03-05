@@ -30,13 +30,6 @@ This is my central command center for mastering production-grade infrastructure.
 
 ---
 
-## 🗺️ Mastery Roadmap (Current Focus: The Second Run)
-*After finished cs50x and reaching a full cloud deployment in 37 days, I am restarting for deep mastery of the fundamentals.*
-
-- [ ] **Phase 1: Linux & Networking** (Advanced CLI, SSH Key Management, TCP/IP)
-- [ ] **Phase 2: Docker Orchestration** (Multi-stage builds, non-root users, Healthchecks)
-- [ ] **Phase 3: Cloud & IaC** (Terraform State Management, AWS Security Groups, CI/CD)
-
 ## 📁 Repository Structure
 - `app-cluster/`: Production Nginx/Flask/Gunicorn configuration.
 - `ai-auditor/`: Gemini-powered security auditing logic.
